@@ -1,0 +1,100 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "titulo titulo" "barra barra" "pizza pizza" "subgrid subgrid" "footer footer";
+}
+
+.titulo {
+	font-size: 30px;
+	grid-area: titulo;
+	background-color: #be2c45;
+	color: rgb(254, 201, 210);
+	height: 50px;
+	padding-top: 30px;
+}
+
+.pesquisar {
+	float: right;
+	color: rgb(254, 201, 210);
+	font-size: 21px;
+	margin-right: 12px;
+}
+
+.pizza {
+	background-color: rgb(215, 91, 72);
+	color: rgb(254, 215, 209);
+	width: 130px;
+	height: 60px;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 240px;
+	margin-left: 50px;
+}
+
+nav {
+	grid-area: barra;
+	background-color: #532537;
+	height: 50px;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.barra {
+	color: rgb(254, 201, 210);
+	padding-top: 15px;
+	padding-left: 30px;
+	word-spacing: 30px;
+}
+
+section {
+	grid-area: pizza;
+	background-image: url(../img/piz.png);
+	background-size: cover;
+	height: 400px;
+}
+
+.subgrid {
+	grid-area: subgrid;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: 30px;
+	margin-top: 20px;
+	text-align: center;
+	color: rgb(190, 44, 69);
+}
+
+.footer {
+	grid-area: footer;
+	background-color: rgb(114, 149, 146);
+	color: #ffffff;
+	bottom: 0;
+	width: 100%;
+	margin-top: auto;
+}
+
+.header {
+	background-color: pink;
+	height: 120px;
+	padding: 30px;
+	grid-area: titulo;
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
